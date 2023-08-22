@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Israel Fernandez</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="main-navbar">
+      <div id="logo-cont">
+        <img id="logo-img" src="/media/svg/israel-dev-logo.png" alt="" />
+      </div>
+
+      <div id="nav-cont">
+        <button class="hamburger" onclick="toggleNav()">&#9776;</button>
+        <nav id="navigate">
+          <ul id="header-nav">
+            <li><a onclick="toggleNav()" href="#titulo-about">Sobre mí</a></li>
+            <li><a onclick="toggleNav()" href="#titulo-skills">Habilidades</a></li>
+            <li><a onclick="toggleNav()" href="#titulo-portafolio">Portafolio</a></li>
+            <li><a onclick="toggleNav()" href="#footer">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+      <div class="header-waves">
+        <main>
+          <section class="hero">
+            <div class="video-container">
+              <video autoplay loop muted playsinline>
+                <source src="/media/video/hero.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div id="hero-cont">
+              <div class="content blink-1">
+                <img class="rotate-in-center" id="hero-animation" 
+                  src="/media/svg/dev-icon.png" alt=""/>
+                <div id="sub-cont">
+                  
+                  <h1 class="escritura">Israel Fernández();</h1>
+                  <h2 class="tracking-in-expand">Web Designer and Developer</h2>
+                </div>
+              </div>
+              <a class="puff-in-center2" href="#titulo-about">Inicio</a>
+              
+            </div>
+          </section>
+
+        <!--Content before waves-->
+        
+        <!--Waves Container-->
+        <div class="waves-container">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v60h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 191, 255, 0.3)" /> <!-- Azul eléctrico discreto -->
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0, 255, 128, 0.2)" /> <!-- Verde lima discreto -->
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 191, 255, 0.1)" /> <!-- Azul eléctrico más discreto -->
+              </g>
+          </svg>
+      </div>
+      
+      
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+
+      <div class="about">
+        <h1 id="titulo-about" class="efecto-chido">Sobre mi</h1>
+        <div class="about-cont efecto-chido">
+          <img id="profile-pic" id="hero-animation" 
+          src="/media/svg/profile-pic.jpg" alt=""/>
+          <p>Hola, <b> soy Israel.</b> <br><br>
+          Soy ingeniero en Informática y tengo experiencia en desarrollo web, 
+          con especialización en Front-end y el uso de React JS y Material-UI.
+          También tengo conocimientos de implementación de CMR como Freshdesk 
+          y CMS como Wordpress y tecnologías Low-code como Microsoft PowerApps.<br><br>
+         
+          Soy una persona proactiva, con facilidad de palabra, con gusto por las ventas 
+          y los negocios digitales, y siempre me baso en un enfoque orientado a resultados.</p>
+        </div>
+
+      </div>  
+
+
+      <div class="skills">
+        <h1 id="titulo-skills" class="efecto-chido">Habilidades</h1>
+        <div class="skills-cont">
+          <div class="skills-subcont flip-card efecto-chido">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Desarrollo web y Front-end</h1>
+                <p>Desarrollo de páginas y aplicaciones web, especializado en Front-end y React.</p>
+                <img src="/media/svg/web-dev.svg" alt="" />
+              </div>
+              <div class="flip-card-back">
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-subcont flip-card efecto-chido">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Implementación Freshdesk</h1>
+                <p>Implementación de CMR Freshdesk, plataforma de gestión de servicio al cliente y soporte empresarial.</p>
+                <img src="/media/svg/freshdesk-logo.svg" alt="" />
+              </div>
+              <div class="flip-card-back">
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-subcont flip-card efecto-chido">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h1>Microsoft PowerApps</h1>
+                <p>Desarrollo ágil de aplicaciones web multi dispositivo, programadas con tecnología low-code.</p>
+                <img src="/media/svg/powerapps.png" alt="" />
+              </div>
+              <div class="flip-card-back">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portafolio">
+          <h1 id="titulo-portafolio" class="efecto-chido">Portafolio</h1>
+          
+
+          <div class="portafolio-cont efecto-chido">
+            <div class="port-cont-img">
+              <img class="port-img" src="/media/portafolio/estacionamiento1-min.PNG" alt=""/>
+            </div>
+            
+            <div class="portafolio-subcont">
+              <h2>Sistema gestión estacionamiento en PowerApps</h2>
+              <p>El sistema cuenta con un eficiente registro de vehículos con hora de entrada automática, generación de códigos de barras en tickets, opciones de cobro simplificado, búsqueda inteligente de vehículos, generación automática de tarifas en tickets de salida y la capacidad de enviar cierres de caja por correo electrónico. Con funciones adicionales como el módulo de cortesías y la personalización de información en tickets, esta solución brinda una gestión integral y eficaz para operaciones de estacionamiento. </p>
+              <div class="port-info-label">
+                <a href="">Más Información</a>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="portafolio-cont efecto-chido">
+            <div class="port-cont-img">
+              <img class="port-img" src="/media/portafolio/freshdesk1.PNG" alt=""/>
+            </div>
+            
+            <div class="portafolio-subcont">
+              <h2>Implementación Freshdesk Omnichannel para AMD</h2>
+              <p>Se implementó con éxito el sistema Freshdesk Omnichannel en Aguas del Municipio de Durango (AMD) para optimizar la atención ciudadana y fortalecer el control interno. Esta implementación involucró la integración completa del sistema de tickets y soporte de Freshdesk en los diferentes canales de comunicación, como redes sociales, correo electrónico y la configuración de un portal para la ciudadanía. </p>
+              <div class="port-info-label">
+                <a href="https://amd.freshdesk.com/">Más Información</a>
+              </div>
+            </div>
+          </div>
+
+          
+      </div>  
+      
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/israel-fern%C3%A1ndez-58a381248/"><img src="/media/svg/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/IsraelFernandezG"><img src="/media/svg/github.png" alt="GitHub"></a>
+            <a href="mailto:israel.fernandez@g-tech.io"><img src="/media/svg/correo.png" alt="Email"></a>
+          </div>
+          <div class="footer-text">
+            <p>2023, Israel Fernández <br>Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
